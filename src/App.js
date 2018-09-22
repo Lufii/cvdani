@@ -4,16 +4,26 @@ import './App.css';
 
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      ask: 'initial',
+    }
+  }
+
+passAsk = (passAskVal) => {
+  this.setState({ask: passAskVal})
+}
 
   render() {
     return (
       <div className="App">
 <div id='leftC'>
   <SVG />
-  <Say />
+  <Say sayVal={this.state.ask}/>
 </div>
 <div id='rightC'>
-  <Ask />
+  <Ask askChange={this.passAsk}/>
 </div>
 </div>
 
@@ -46,18 +56,18 @@ class Ask extends Component{
 <div id='nav'>
       <h1 class="accordion">About</h1>
 <div class="panel">
-  <p>Techs</p>
-  <p>Hobbies</p>
-  <p>Principles</p>
+  <p onClick={()=> {this.props.askChange('techs')}}>Techs</p>
+  <p onClick={()=> {this.props.askChange('hobbies')}}>Hobbies</p>
+  <p onClick={()=> {this.props.askChange('principles')}}>Principles</p>
 </div>
 <h1 class="accordion">Projects</h1>
 <div class="panel">
-  <p>This page</p>
-  <p>CILDecor</p>
-  <p>Engulf</p>
-  <p>HalcyonWeave</p>
+  <p onClick={()=> {this.props.askChange('cv')}}>This page</p>
+  <p onClick={()=> {this.props.askChange('cildecor')}}>CILDecor</p>
+  <p onClick={()=> {this.props.askChange('engulf')}}>Engulf</p>
+  <p onClick={()=> {this.props.askChange('hw')}}>HalcyonWeave</p>
 </div>
-<h1 class="accordion">Contact</h1>
+<h1 class="accordion" onClick={()=> {this.props.askChange('contact')}}>Contact</h1>
 </div>
     );
   }
@@ -65,6 +75,18 @@ class Ask extends Component{
 
 class Say extends Component{
   render(){
+    if(this.props.sayVal==='contact')
+    return(
+      <div>
+      <p>Full name: Daniel-Petru Achim</p>
+      <p>Born: 29th of April, 1991</p>
+      <p>Age: value</p>
+      <p>email: dani@halcyonweave.com</p>
+      <p>linkedin: https://www.linkedin.com/in/dani-a-01167ab6</p>
+      <p>github: https://github.com/Lufii</p>
+      </div>
+    );
+    else
     return(
       "ICESat-2 (Ice, Cloud, and land Elevation Satellite 2), part of NASA's Earth Observing System, is a satellite mission for measuring ice sheet elevation and sea ice thickness, as well as land topography and vegetation characteristics.[7] ICESat-2, a follow-on to the ICESat mission, was launched on 15 September 2018 from Vandenberg Air Force Base in California,[3] into a near-circular, near-polar orbit with an altitude of approximately 496 km (308 mi). It was designed to operate for three years and carry enough propellant for seven years.[8]"
     );

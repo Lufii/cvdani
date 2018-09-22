@@ -60,15 +60,16 @@ height:100%;
 #leftC{
   vertical-align: middle;
   display: inline-block;
-  max-width: 80%;
+  max-width: 50%;
   position: relative;
 }
 
 #rightC{
+  right: 10%;
   vertical-align: middle;
   display: inline-block;
   max-width: 20%;
-  position: relative;
+  position: fixed;
 
 }
 
@@ -83,15 +84,16 @@ height:100%;
 #leftC{
   vertical-align: middle;
   display: inline-block;
-  max-width: 60%;
+  max-width: 50%;
   position: relative;
 }
 
 #rightC{
+  right:10%;
   vertical-align: middle;
   display: inline-block;
-  max-width: 20%;
-  position: relative;
+  max-width: 10%;
+  position: fixed;
 
 }
 }
