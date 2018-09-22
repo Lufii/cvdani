@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+
+.footer{
+  max-width: 100%;
+}
+
+body{
+  background-color: rgb(20,20,20,255);
+  text-align: center;
+  color: white;
+}
+
+#face {
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.eyes1,  #face rect{
+fill:rgb(255,255,255)
+}
+
+.eyes2{
+  display:none;
+  fill:none;
+  stroke: white;
+  stroke-width: 15.539;
+}
+#face:hover .eyes2{
+  display: initial;
+}
+#face:hover .eyes1{
+  display: none;
+}
+
+.App{
+height:100%;
+}
+
+#leftC{
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 80%;
+  position: relative;
+}
+
+#rightC{
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 20%;
+  position: relative;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+.App{
+margin-top:15%;
+margin-bottom:15%;
+height:100%;
+}
+
+#leftC{
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 60%;
+  position: relative;
+}
+
+#rightC{
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 20%;
+  position: relative;
+
+}
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.active, .accordion:hover {
+    color: red;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
