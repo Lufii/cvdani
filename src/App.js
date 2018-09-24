@@ -51,23 +51,47 @@ class SVG extends Component {
 }
 
 class Ask extends Component{
+  constructor(props){
+    super(props);
+    this.state={
+      m1: 0,
+      m2: 0
+    }
+  }
   render(){
+    if(this.state.m1===0 && this.state.m2===0)
     return(
 <div id='nav'>
-      <h1 class="accordion">About</h1>
-<div class="panel">
-  <p onClick={()=> {this.props.askChange('techs')}}>Techs</p>
-  <p onClick={()=> {this.props.askChange('hobbies')}}>Hobbies</p>
-  <p onClick={()=> {this.props.askChange('principles')}}>Principles</p>
+      <h1 className="accordion" onClick={()=> {this.setState({m1:1, m2:0})}}>About</h1>
+      <h1 className="accordion" onClick={()=> {this.setState({m2:1, m1:0})}}>Projects</h1>
+      <h1 className="panel3 accordion" onClick={()=> {this.props.askChange('contact')}}>Contact</h1>
 </div>
-<h1 class="accordion">Projects</h1>
-<div class="panel">
+    );
+    else if(this.state.m1===1)
+    return(
+    <div id='nav'>
+      <h1 className="accordion" onClick={()=> {this.setState({m1:1, m2:0})}}>About</h1>
+    <div className="panel1">
+    <p onClick={()=> {this.props.askChange('techs')}}>Techs</p>
+    <p onClick={()=> {this.props.askChange('hobbies')}}>Hobbies</p>
+    <p onClick={()=> {this.props.askChange('principles')}}>Principles</p>
+    </div>
+<h1 className="accordion" onClick={()=> {this.setState({m2:1, m1:0})}}>Projects</h1>
+    <h1 className="panel3 accordion" onClick={()=> {this.props.askChange('contact')}}>Contact</h1>
+    </div>
+    );
+    else if(this.state.m2===1)
+    return(
+<div id='nav'>
+      <h1 className="accordion" onClick={()=> {this.setState({m1:1, m2:0})}}>About</h1>
+<h1 className="accordion" onClick={()=> {this.setState({m2:1, m1:0})}}>Projects</h1>
+<div className="panel2">
   <p onClick={()=> {this.props.askChange('cv')}}>This page</p>
   <p onClick={()=> {this.props.askChange('cildecor')}}>CILDecor</p>
   <p onClick={()=> {this.props.askChange('engulf')}}>Engulf</p>
   <p onClick={()=> {this.props.askChange('hw')}}>HalcyonWeave</p>
 </div>
-<h1 class="accordion" onClick={()=> {this.props.askChange('contact')}}>Contact</h1>
+<h1 className="panel3 accordion" onClick={()=> {this.props.askChange('contact')}}>Contact</h1>
 </div>
     );
   }
@@ -84,6 +108,53 @@ class Say extends Component{
       <p>email: dani@halcyonweave.com</p>
       <p>linkedin: https://www.linkedin.com/in/dani-a-01167ab6</p>
       <p>github: https://github.com/Lufii</p>
+      </div>
+    );
+    else if(this.props.sayVal==='techs')
+    return(
+      <div>
+      <h3>Commercial experience, 12 months:</h3>
+      <p>HTML5</p>
+      <p>CSS5</p>
+      <p>JavaScript</p>
+      <p>jQuery</p>
+      <h3>Hobby experience, based on projects:</h3>
+      <p>React</p>
+      <p>Node</p>
+      <p>MongoDB</p>
+      </div>
+    );
+    else if(this.props.sayVal==='hobbies')
+    return(
+      <div>
+      <p>Skiing, reading SF novels(Dune, The Foundation, The Expanse), guitar+voice super privately, post-rock, ambiental, post grunge, pop rock, classical music. SF shows and movies (The Expanse,
+        Firefly, Battlestar Galactica, John Carter, The fifth element, Valerian and the City of a Thousand Planets)</p>
+      </div>
+    );
+    else if(this.props.sayVal==='principles')
+    return(
+      <div>
+      <p>Generate positive change</p>
+      <p>Take others' perspectives</p>
+      <p>Be mindful of others</p>
+      <p>Create simple yet thorough experiences</p>
+      <p>Concise communication</p>
+      </div>
+    );
+    else if(this.props.sayVal==='cv')
+    return(
+      <div>
+      <h3>CV page</h3>
+      <p>Technical: Simple react app. Basic SVG creation and manipulation.</p>
+      <p>Design: Menu and content positioning, responsiveness, content creation</p>
+      </div>
+    );
+    else if(this.props.sayVal==='cildecor')
+    return(
+      <div>
+      <h3>CIL Decor presentation page</h3>
+      <p>Technical: Domain set-up, hosting and e-mail set-up. Wordpress implementation. Minor javaScript animations.</p>
+      <p>Design: significant video and image editing, color pallette selection and information structuring for the presentation website</p>
       </div>
     );
     else

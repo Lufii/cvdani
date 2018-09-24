@@ -34,6 +34,7 @@ body{
 #face {
   margin: 0 auto;
   max-width: 100px;
+  padding-bottom: 25px;
 }
 
 .eyes1,  #face rect{
@@ -98,19 +99,12 @@ height:100%;
 }
 }
 
-.panel {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-}
-
 .active, .accordion:hover {
     color: red;
 }
 
 .accordion {
     cursor: pointer;
-    padding: 18px;
     border: none;
     outline: none;
     transition: 0.4s;
