@@ -87,10 +87,10 @@ class Ask extends Component{
       <h1 className="accordion" onClick={()=> {this.setState({m1:1, m2:0})}}>About</h1>
 <h1 className="accordion" onClick={()=> {this.setState({m2:1, m1:0})}}>Projects</h1>
 <div className="panel2">
-  <p onClick={()=> {this.props.askChange('cv')}}>This page</p>
-  <p onClick={()=> {this.props.askChange('cildecor')}}>CIL Decor</p>
   <p onClick={()=> {this.props.askChange('engulf')}}>Engulf</p>
+  <p onClick={()=> {this.props.askChange('cildecor')}}>CIL Decor</p>
   <p onClick={()=> {this.props.askChange('hw')}}>HalcyonWeave</p>
+  <p onClick={()=> {this.props.askChange('cv')}}>This page</p>
 </div>
 <h1 className="panel3 accordion" onClick={()=> {this.props.askChange('contact')}}>Contact</h1>
 </div>
@@ -123,9 +123,12 @@ class Say extends Component{
     else if(this.props.sayVal==='hobbies')
     return(
       <div>
-      <p>Skiing - the steeper the slope, the better</p>
-      <p>Science Fiction - novels(Dune, The Foundation, The Expanse), shows(Firefly, The Expanse, Battlestar Galactica), movies and games(EVE Online)</p>
-      <p>Music - post-rock, post-grunge, pop rock, classical. I may or may not play guitar+voice privately (*shy*)</p>
+      <h3>Skiing</h3>
+      <p>The steeper and longer the slope, the better</p>
+      <h3>Science Fiction</h3>
+      <p>Novels(Dune, The Foundation, The Expanse), shows(Firefly, The Expanse, Battlestar Galactica), movies and games(EVE Online)</p>
+      <h3>Music</h3>
+      <p>Post-rock, post-grunge, pop rock, classical. I may or may not play guitar+voice privately (*shy*)</p>
       </div>
     );
     else if(this.props.sayVal==='principles')
@@ -142,43 +145,52 @@ class Say extends Component{
     return(
       <div>
       <h3>CV page</h3>
-      <p>Technical: Simple react app. Basic SVG creation and manipulation.</p>
-      <p>Design: Menu and content positioning, responsiveness, content creation</p>
+      <p>Simple app meant to streamline my job application process.</p>
+      <p>Relevant aspects: written in react, has SVG sample(the smiley above), information structuring, content creation.</p>
       </div>
     );
     else if(this.props.sayVal==='cildecor')
     return(
       <div>
-      <h3>CIL Decor presentation page</h3>
-      <p>Technical: Domain set-up, hosting and e-mail set-up. Wordpress implementation. Minor javaScript animations.</p>
-      <p>Design: significant video and image editing, color pallette selection and information structuring for the presentation website</p>
+      <h3>CIL Decor</h3>
+      <p>Presentation page for my brother-in-law's wallpaper mounting business</p>
+      <p>Made in wordpress with custom CSS and JS plugins, hosted on GoDaddy. The creation process involved complete web page design with information structuring, google fonts setup, color pallete selection and distribution, considerable video and image editing, domain, webmail and hosting setup.</p>
       </div>
     );
     else if(this.props.sayVal==='engulf')
     return(
       <div>
-      <h3>Engulf - warehouse application</h3>
-      <p>Technical: MongoDB, Node, React.</p>
-      <p>Design: simple CRUD interface</p>
+      <h3>Engulf</h3>
+      <p>Inventory app written to help me keep track of warehouse stock during my brief stay with Design Resource. Two working parts: back-end(Pluck on GitHub) and front-end(Engulf on GitHub)</p>
+      <h3>Pluck</h3>
+      <p>Written in node+express and hosted on heroku. Coomunicates with a MongoDB hosted on mLab. Has a few API endpoints for simple CRUD operations</p>
+      <h3>Engulf</h3>
+      <p>My first fully functional react project which I am looking to improve. Straightforward interface for managing stock via CRUD operations. The build is currently hosted on GoDaddy</p>
       </div>
     );
     else if(this.props.sayVal==='hw')
     return(
       <div>
-      <h3>HalcyonWeave interface for freelancing projects</h3>
-      <p>Technical: React</p>
+      <h3>HalcyonWeave</h3>
+      <p>Landing page for freelancing work I plan to undertake.</p>
       <p>Design: simple design</p>
       </div>
     );
     else if(this.props.sayVal==='jobhistory')
     return(
       <div>
-      <p>2010-2013 - Bachelors degree in business administration from West University of Timisoara(3 years programme). Studied for 1 year in Nottingham, UK, via an Erasmus scholarship during this time</p>
-      <p>2012-2017 - Took time to work on creative projects(music, writing and an unhealthy amount of gaming) while working various jobs including warehouse work, street sales, sales and construction work</p>
-      <p>2015 - Lead Generation Specialist at Lingo24(3 months). An extension of the contract was possible but I was unsure about my desire to continue working in sales</p>
-      <p>2017 - Returned to my programming roots from highschool and realised I enjoy JavaScript very much. Studied HTML, CSS and js for a few months before landing my first job in the sector</p>
-      <p>2017-2018 - Junior Survey Programmer at Toluna(12 months). I loved it, but aimed to expand my horizons beyond market research and the framework in use</p>
-      <p>REWORK THIS 2018 - Administrative Assistant at Design Resource - perfect 2 months limited contract helping an aquaintance. Involved learning and juggling of daily business tasks. Gave me the time and resources necessary for deepening my understanding of a full stack framework(MongoDB, Express, Node, React) Created a small warehouse CRUD app.</p>
+      <h3>2010-2013</h3>
+      <p>Bachelors degree in business administration from West University of Timisoara(3 years programme). Studied for 1 year in Nottingham, UK, via an Erasmus scholarship during this time</p>
+      <h3>2012-2017</h3>
+      <p>Took time to work on creative projects(music, writing and an unhealthy amount of gaming) while working various jobs including warehouse work, street sales, sales and construction work</p>
+      <h3>2015</h3>
+      <p>Lead Generation Specialist at Lingo24(3 months). An extension of the contract was possible but I was unsure about my desire to continue working in sales</p>
+      <h3>2017</h3>
+      <p>Returned to my programming roots from highschool and realised I enjoy JavaScript very much. Studied HTML, CSS and js for a few months before landing my first job in the sector</p>
+      <h3>2017-2018</h3>
+      <p>Junior Survey Programmer at Toluna(12 months). I loved it, but aimed to expand my horizons beyond market research and the framework in use</p>
+      <h3>2018</h3>
+      <p>Administrative Assistant at Design Resource(2 months). Light schedule, fixed term contract that gave me time and resources to dive deeper into React, basic Node and basic MongoDB</p>
       </div>
     );
     else
