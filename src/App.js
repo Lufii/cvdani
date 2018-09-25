@@ -72,7 +72,7 @@ class Ask extends Component{
     <div id='nav'>
       <h1 className="accordion" onClick={()=> {this.setState({m1:1, m2:0})}}>About</h1>
     <div className="panel1">
-    <p onClick={()=> {this.props.askChange('techs')}}>Techs</p>
+    <p onClick={()=> {this.props.askChange('techs')}}>Tools</p>
     <p onClick={()=> {this.props.askChange('hobbies')}}>Hobbies</p>
     <p onClick={()=> {this.props.askChange('principles')}}>Principles</p>
     <p onClick={()=> {this.props.askChange('jobhistory')}}>Job history</p>
@@ -114,32 +114,28 @@ class Say extends Component{
     else if(this.props.sayVal==='techs')
     return(
       <div>
-      <h3>Commercial experience, 12 months:</h3>
-      <p>HTML5</p>
-      <p>CSS5</p>
-      <p>JavaScript</p>
-      <p>jQuery</p>
-      <h3>Hobby experience, based on projects:</h3>
-      <p>React</p>
-      <p>Node</p>
-      <p>MongoDB</p>
+      <h3>Commercial experience</h3>
+      <p>HTML5, CSS3, JavaScript, jQuery, SQL, regex, media formatting and design, full website design</p>
+      <h3>Personal experience</h3>
+      <p>React, Node, MongoDB, GitHub, heroku, SVG, webmail, Google Apps Script, API development and usage</p>
       </div>
     );
     else if(this.props.sayVal==='hobbies')
     return(
       <div>
-      <p>Skiing, reading SF novels(Dune, The Foundation, The Expanse), guitar+voice super privately, post-rock, ambiental, post grunge, pop rock, classical music. SF shows and movies (The Expanse,
-        Firefly, Battlestar Galactica, John Carter, The fifth element, Valerian and the City of a Thousand Planets)</p>
+      <p>Skiing - the steeper the slope, the better</p>
+      <p>Science Fiction - novels(Dune, The Foundation, The Expanse), shows(Firefly, The Expanse, Battlestar Galactica), movies and games(EVE Online)</p>
+      <p>Music - post-rock, post-grunge, pop rock, classical. I may or may not play guitar+voice privately (*shy*)</p>
       </div>
     );
     else if(this.props.sayVal==='principles')
     return(
       <div>
       <p>Generate positive change</p>
-      <p>Take others' perspectives</p>
-      <p>Be mindful of others</p>
-      <p>Create simple yet thorough experiences</p>
+      <p>Understand other perspectives</p>
       <p>Concise communication</p>
+      <p>Be mindful of others</p>
+      <p>Live to learn</p>
       </div>
     );
     else if(this.props.sayVal==='cv')
@@ -177,8 +173,12 @@ class Say extends Component{
     else if(this.props.sayVal==='jobhistory')
     return(
       <div>
-      <h3>Jobs</h3>
-      <p>Book salesman, various construction jobs, lead generation specialist, explore musical side, writing, survey programmer</p>
+      <p>2010-2013 - Bachelors degree in business administration from West University of Timisoara(3 years programme). Studied for 1 year in Nottingham, UK, via an Erasmus scholarship during this time</p>
+      <p>2012-2017 - Took time to work on creative projects(music, writing and an unhealthy amount of gaming) while working various jobs including warehouse work, street sales, sales and construction work</p>
+      <p>2015 - Lead Generation Specialist at Lingo24(3 months). An extension of the contract was possible but I was unsure about my desire to continue working in sales</p>
+      <p>2017 - Returned to my programming roots from highschool and realised I enjoy JavaScript very much. Studied HTML, CSS and js for a few months before landing my first job in the sector</p>
+      <p>2017-2018 - Junior Survey Programmer at Toluna(12 months). I loved it, but aimed to expand my horizons beyond market research and the framework in use</p>
+      <p>REWORK THIS 2018 - Administrative Assistant at Design Resource - perfect 2 months limited contract helping an aquaintance. Involved learning and juggling of daily business tasks. Gave me the time and resources necessary for deepening my understanding of a full stack framework(MongoDB, Express, Node, React) Created a small warehouse CRUD app.</p>
       </div>
     );
     else

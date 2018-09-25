@@ -7,7 +7,7 @@ body{
 #face {
   margin: 0 auto;
   max-width: 100px;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-bottom: 30px;
 
 }
@@ -35,7 +35,7 @@ height:100%;
 }
 
 #leftC{
-
+padding:10px;
 
 }
 
