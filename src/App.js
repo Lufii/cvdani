@@ -99,23 +99,32 @@ class Ask extends Component{
 }
 
 class Say extends Component{
+  age(){
+    var today = new Date();
+    var birth = new Date(1991,3,29);
+    var yToday = Date.UTC(today.getFullYear(), today.getMonth()+1, today.getDate())/1000/60/60/24/30.42/12;
+    var yBirth = Date.UTC(birth.getFullYear(), birth.getMonth()+1, birth.getDate())/1000/60/60/24/30.42/12;
+    var age = yToday - yBirth;
+    console.log("Since '70: "+yToday+" years. 70' to birth: "+yBirth+" years. Age: "+age);
+    return age - age%1;
+  }
+
   render(){
     if(this.props.sayVal==='contact')
     return(
       <div>
-      <p>Full name: Daniel-Petru Achim</p>
-      <p>Born: 29th of April, 1991</p>
-      <p>Age: value</p>
-      <p>email: dani@halcyonweave.com</p>
-      <p>linkedin: https://www.linkedin.com/in/dani-a-01167ab6</p>
-      <p>github: https://github.com/Lufii</p>
+      <h3>Details</h3>
+      <p>Daniel-Petru Achim <br/> Born on the 29th of April, 1991 - age {this.age()} <br/> Currently living in Timisoara, Romania.</p>
+      <a href="https://github.com/Lufii" target="_blank" rel="noopener noreferrer">GitHub</a><br/>
+      <a href="https://www.linkedin.com/in/dani-a-01167ab6" target="_blank" rel="noopener noreferrer">LinkedIn</a><br/>
+      <p>dani@halcyonweave.com</p>
       </div>
     );
     else if(this.props.sayVal==='techs')
     return(
       <div>
       <h3>Commercial experience</h3>
-      <p>HTML5, CSS3, JavaScript, jQuery, SQL, regex, media formatting and design, full website design</p>
+      <p>HTML5, CSS3, JavaScript, jQuery, SQL, regex, media formatting and design, full presentation website design</p>
       <h3>Personal experience</h3>
       <p>React, Node, MongoDB, GitHub, heroku, SVG, webmail, Google Apps Script, API development and usage</p>
       </div>
@@ -146,7 +155,10 @@ class Say extends Component{
       <div>
       <h3>CV page</h3>
       <p>Simple app meant to streamline my job application process.</p>
-      <p>Relevant aspects: written in react, has SVG sample(the smiley above), information structuring, content creation.</p>
+      <p>Written in react, hosted on GoDaddy. The process included information structuring, content creation and some SVG experimenting(the smiley above).</p>
+      <h3>Links</h3>
+      <a href='http://dani.halcyonweave.com' target="_blank" rel="noopener noreferrer">Link to this page</a><br/>
+      <a href='https://www.github.com/Lufii/cvdani.git' target="_blank" rel="noopener noreferrer">cvdani on GitHub</a>
       </div>
     );
     else if(this.props.sayVal==='cildecor')
@@ -154,7 +166,11 @@ class Say extends Component{
       <div>
       <h3>CIL Decor</h3>
       <p>Presentation page for my brother-in-law's wallpaper mounting business</p>
-      <p>Made in wordpress with custom CSS and JS plugins, hosted on GoDaddy. The creation process involved complete web page design with information structuring, google fonts setup, color pallete selection and distribution, considerable video and image editing, domain, webmail and hosting setup.</p>
+      <p>Made in wordpress with custom CSS and JS plugins, hosted on GoDaddy. The creation process involved complete web page design with information structuring, google fonts setup,
+      color pallete selection and distribution, considerable video and image editing in addition to domain, webmail and hosting setup</p>
+      <h3>Links</h3>
+      <a href='http://www.cildecor.com' target="_blank" rel="noopener noreferrer">Live page</a><br/>
+      <a href='https://www.github.com/Lufii/cildecor.git' target="_blank" rel="noopener noreferrer">Custom wordpress files on GitHub</a>
       </div>
     );
     else if(this.props.sayVal==='engulf')
@@ -162,10 +178,14 @@ class Say extends Component{
       <div>
       <h3>Engulf</h3>
       <p>Inventory app written to help me keep track of warehouse stock during my brief stay with Design Resource. Two working parts: back-end(Pluck on GitHub) and front-end(Engulf on GitHub)</p>
-      <h3>Pluck</h3>
+      <h3>Back-end</h3>
       <p>Written in node+express and hosted on heroku. Coomunicates with a MongoDB hosted on mLab. Has a few API endpoints for simple CRUD operations</p>
-      <h3>Engulf</h3>
-      <p>My first fully functional react project which I am looking to improve. Straightforward interface for managing stock via CRUD operations. The build is currently hosted on GoDaddy</p>
+      <h3>Front-end</h3>
+      <p>My first functional react project - straightforward interface for managing stock via CRUD operations. Makes API calls to Pluck(the back-end) via the designated endpoints. The build is currently hosted on GoDaddy</p>
+      <h3>Links</h3>
+      <a href='http://engulf.halcyonweave.com' target="_blank" rel="noopener noreferrer">Live demo</a><br/>
+      <a href='https://www.github.com/Lufii/pluck.git' target="_blank" rel="noopener noreferrer">Pluck on GitHub</a><br/>
+      <a href='https://www.github.com/Lufii/engulf.git' target="_blank" rel="noopener noreferrer">Engulf on GitHub</a>
       </div>
     );
     else if(this.props.sayVal==='hw')
@@ -179,15 +199,15 @@ class Say extends Component{
     else if(this.props.sayVal==='jobhistory')
     return(
       <div>
-      <h3>2010-2013</h3>
-      <p>Bachelors degree in business administration from West University of Timisoara(3 years programme). Studied for 1 year in Nottingham, UK, via an Erasmus scholarship during this time</p>
-      <h3>2012-2017</h3>
+      <h3>2010 - 2013</h3>
+      <p>Bachelor's degree in business administration from West University of Timisoara(3 years programme). The second year was spent in Nottingham, UK, via an Erasmus scholarship</p>
+      <h3>2012 - 2017</h3>
       <p>Took time to work on creative projects(music, writing and an unhealthy amount of gaming) while working various jobs including warehouse work, street sales, sales and construction work</p>
       <h3>2015</h3>
       <p>Lead Generation Specialist at Lingo24(3 months). An extension of the contract was possible but I was unsure about my desire to continue working in sales</p>
       <h3>2017</h3>
-      <p>Returned to my programming roots from highschool and realised I enjoy JavaScript very much. Studied HTML, CSS and js for a few months before landing my first job in the sector</p>
-      <h3>2017-2018</h3>
+      <p>Returned to my programming roots from highschool and realised I enjoy JavaScript very much. Studied HTML, CSS and JS for a few months before landing my first job in the sector</p>
+      <h3>2017 - 2018</h3>
       <p>Junior Survey Programmer at Toluna(12 months). I loved it, but aimed to expand my horizons beyond market research and the framework in use</p>
       <h3>2018</h3>
       <p>Administrative Assistant at Design Resource(2 months). Light schedule, fixed term contract that gave me time and resources to dive deeper into React, basic Node and basic MongoDB</p>
@@ -195,7 +215,7 @@ class Say extends Component{
     );
     else
     return(
-      null
+      "Hi! Welcome to Dani's CV page. Glad to see you here."
     );
   }
 }

@@ -81,3 +81,11 @@ height:100%;
     outline: none;
     transition: 0.4s;
 }
+
+#leftC a:link{
+  color: white;
+}
+
+#leftC a:hover, a:visited{
+  color: red;
+}
