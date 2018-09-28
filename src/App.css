@@ -5,11 +5,11 @@ body{
 }
 
 #face {
+  transform: rotate(8deg);
   margin: 0 auto;
   max-width: 100px;
   padding-top: 30px;
   padding-bottom: 30px;
-
 }
 
 .eyes1,  #face rect{
@@ -22,15 +22,16 @@ fill:rgb(255,255,255)
   stroke: white;
   stroke-width: 15.539;
 }
-#face:hover .eyes2{
 
+#face:hover .eyes2{
   opacity: 1;
 }
+
 #face:hover .eyes1{
   opacity: 0;
 }
 
-.App{
+.App, body, #root, html{
 height:100%;
 }
 
@@ -47,28 +48,30 @@ border-top: 1px solid white;
 
 
 @media only screen and (min-width: 768px) {
-.App{
-margin-top:15%;
-margin-bottom:15%;
-height:100%;
-}
 
 #leftC{
-  vertical-align: middle;
   display: inline-block;
   max-width: 50%;
   position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #rightC{
   right:10%;
-  vertical-align: middle;
+  top: 50%;
+  transform: translateY(-50%);
   display: inline-block;
   max-width: 10%;
   position: fixed;
   border-top: none;
 
 }
+
+.App {
+  position: relative;
+}
+
 }
 
 .active, .accordion:hover, #nav p:hover {

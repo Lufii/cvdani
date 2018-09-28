@@ -114,7 +114,7 @@ class Say extends Component{
     return(
       <div>
       <h3>Details</h3>
-      <p>Daniel-Petru Achim <br/> Born on the 29th of April, 1991 - age {this.age()} <br/> Currently living in Timisoara, Romania.</p>
+      <p>Daniel-Petru Achim <br/> Born on the 29th of April, 1991 - age {this.age()} <br/> Currently living in Timisoara, Romania</p>
       <a href="https://github.com/Lufii" target="_blank" rel="noopener noreferrer">GitHub</a><br/>
       <a href="https://www.linkedin.com/in/dani-a-01167ab6" target="_blank" rel="noopener noreferrer">LinkedIn</a><br/>
       <p>dani@halcyonweave.com</p>
@@ -135,7 +135,7 @@ class Say extends Component{
       <h3>Skiing</h3>
       <p>The steeper and longer the slope, the better</p>
       <h3>Science Fiction</h3>
-      <p>Novels(Dune, The Foundation, The Expanse), shows(Firefly, The Expanse, Battlestar Galactica), movies and games(EVE Online)</p>
+      <p>Novels(Dune, The Foundation, The Expanse), shows(Firefly, The Expanse, Battlestar Galactica), movies and games(EVE Online, Dota 2)</p>
       <h3>Music</h3>
       <p>Post-rock, post-grunge, pop rock, classical. I may or may not play guitar+voice privately (*shy*)</p>
       </div>
@@ -208,7 +208,8 @@ class Say extends Component{
       <h3>2017</h3>
       <p>Returned to my programming roots from highschool and realised I enjoy JavaScript very much. Studied HTML, CSS and JS for a few months before landing my first job in the sector</p>
       <h3>2017 - 2018</h3>
-      <p>Junior Survey Programmer at Toluna(12 months). I loved it, but aimed to expand my horizons beyond market research and the framework in use</p>
+      <p>Junior Survey Programmer at Toluna(12 months) with HTML, CSS, JavaScript and jQuery. I occasionally took on project-specific requiremens like SQL and browser compatibility work on custom components.
+      Was SP lead for a multitude of quick-turnaround projects and a handful of long-term studies as well. I loved it, but aimed to expand my horizons beyond market research and the framework in use</p>
       <h3>2018</h3>
       <p>Administrative Assistant at Design Resource(2 months). Light schedule, fixed term contract that gave me time and resources to dive deeper into React, basic Node and basic MongoDB</p>
       </div>
