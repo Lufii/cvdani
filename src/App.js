@@ -158,7 +158,7 @@ class Say extends Component{
       <p>Written in react, hosted on GoDaddy. The process included information structuring, content creation and some SVG experimenting(the smiley above).</p>
       <h3>Links</h3>
       <a href='http://dani.halcyonweave.com' target="_blank" rel="noopener noreferrer">Link to this page</a><br/>
-      <a href='https://www.github.com/Lufii/cvdani.git' target="_blank" rel="noopener noreferrer">cvdani on GitHub</a>
+      <a href='https://www.github.com/Lufii/cvdani.git' target="_blank" rel="noopener noreferrer">cvDani on GitHub</a>
       </div>
     );
     else if(this.props.sayVal==='cildecor')
