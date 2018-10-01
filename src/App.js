@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-
-
+import github from './github.png'
+import linkedin from './linkedin.png'
 
 class App extends Component {
   constructor(props){
@@ -112,11 +112,11 @@ class Say extends Component{
   render(){
     if(this.props.sayVal==='contact')
     return(
-      <div>
+      <div className='contact'>
       <h3>Details</h3>
       <p>Daniel-Petru Achim <br/> Born on the 29th of April, 1991 - age {this.age()} <br/> Currently living in Timisoara, Romania</p>
-      <a href="https://github.com/Lufii" target="_blank" rel="noopener noreferrer">GitHub</a><br/>
-      <a href="https://www.linkedin.com/in/dani-a-01167ab6" target="_blank" rel="noopener noreferrer">LinkedIn</a><br/>
+      <a href="https://github.com/Lufii" title='GitHub' target="_blank" rel="noopener noreferrer"><img src={github} alt='GitHub'/></a>
+      <a href="https://www.linkedin.com/in/dani-a-01167ab6" title='LinkedIn' target="_blank" rel="noopener noreferrer"><img src={linkedin} alt='LinkedIn'/></a><br/>
       <p>dani@halcyonweave.com</p>
       </div>
     );
@@ -216,7 +216,9 @@ class Say extends Component{
     );
     else
     return(
-      "Hi! Welcome to Dani's CV page. Glad to see you here."
+
+      <h3>Hi! Welcome to Dani's CV page. Glad to see you here.</h3>
+
     );
   }
 }

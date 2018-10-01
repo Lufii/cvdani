@@ -92,3 +92,8 @@ border-top: 1px solid white;
 #leftC a:hover, a:visited{
   color: red;
 }
+
+.contact img {
+  margin: 4px;
+  max-width: 50px;
+}
