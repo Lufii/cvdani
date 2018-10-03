@@ -192,8 +192,10 @@ class Say extends Component{
     return(
       <div>
       <h3>HalcyonWeave</h3>
-      <p>Landing page for freelancing work I plan to undertake.</p>
-      <p>Design: simple design</p>
+      <p>Landing page for freelancing work I plan to undertake in the future</p>
+      <p>Done with react. Good amount of SVG, as well as react animations.</p>
+      <a href='https://www.halcyonweave.com' target="_blank" rel="noopener noreferrer">Live page</a><br/>
+      <a href='https://www.github.com/Lufii/halcyonWeave.git' target="_blank" rel="noopener noreferrer">HalcyonWeave on GitHub</a><br/>
       </div>
     );
     else if(this.props.sayVal==='jobhistory')
