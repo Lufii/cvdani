@@ -157,7 +157,7 @@ class Say extends Component{
       <p>Simple app meant to streamline my job application process.</p>
       <p>Written in react, hosted on GoDaddy. The process included information structuring, content creation and some SVG experimenting(the smiley above).</p>
       <h3>Links</h3>
-      <a href='http://dani.halcyonweave.com' target="_blank" rel="noopener noreferrer">Link to this page</a><br/>
+      <a href='https://dani.halcyonweave.com' target="_blank" rel="noopener noreferrer">Link to this page</a><br/>
       <a href='https://www.github.com/Lufii/cvdani.git' target="_blank" rel="noopener noreferrer">cvDani on GitHub</a>
       </div>
     );
@@ -183,7 +183,7 @@ class Say extends Component{
       <h3>Front-end</h3>
       <p>My first functional react project - straightforward interface for managing stock via CRUD operations. Makes API calls to Pluck(the back-end) via the designated endpoints. The build is currently hosted on GoDaddy</p>
       <h3>Links</h3>
-      <a href='http://engulf.halcyonweave.com' target="_blank" rel="noopener noreferrer">Live demo</a><br/>
+      <a href='https://engulf.halcyonweave.com' target="_blank" rel="noopener noreferrer">Live demo</a><br/>
       <a href='https://www.github.com/Lufii/pluck.git' target="_blank" rel="noopener noreferrer">Pluck on GitHub</a><br/>
       <a href='https://www.github.com/Lufii/engulf.git' target="_blank" rel="noopener noreferrer">Engulf on GitHub</a>
       </div>
