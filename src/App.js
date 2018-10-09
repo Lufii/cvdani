@@ -116,7 +116,7 @@ class Say extends Component{
       <h3>Details</h3>
       <p>Daniel-Petru Achim <br/> Born on the 29th of April, 1991 - age {this.age()} <br/> Currently living in Timisoara, Romania</p>
       <a href="https://github.com/Lufii" title='GitHub' target="_blank" rel="noopener noreferrer"><img src={github} alt='GitHub'/></a>
-      <a href="https://www.linkedin.com/in/dani-a-01167ab6" title='LinkedIn' target="_blank" rel="noopener noreferrer"><img src={linkedin} alt='LinkedIn'/></a><br/>
+      <a href="https://www.linkedin.com/in/dani-achim-01167ab6/" title='LinkedIn' target="_blank" rel="noopener noreferrer"><img src={linkedin} alt='LinkedIn'/></a><br/>
       <p>dani@halcyonweave.com</p>
       </div>
     );
@@ -192,7 +192,7 @@ class Say extends Component{
     return(
       <div>
       <h3>HalcyonWeave</h3>
-      <p>Landing page for freelancing work I plan to undertake in the future</p>
+      <p>Landing page for freelancing work I plan to undertake</p>
       <p>Done with react. Good amount of SVG, as well as react animations.</p>
       <a href='https://www.halcyonweave.com' target="_blank" rel="noopener noreferrer">Live page</a><br/>
       <a href='https://www.github.com/Lufii/halcyonWeave.git' target="_blank" rel="noopener noreferrer">HalcyonWeave on GitHub</a><br/>
