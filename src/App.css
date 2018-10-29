@@ -5,7 +5,12 @@ body{
 }
 
 #face {
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
   transform: rotate(8deg);
+
   margin: 0 auto;
   max-width: 100px;
   padding-top: 30px;
@@ -54,13 +59,24 @@ border-top: 1px solid white;
   max-width: 50%;
   position: relative;
   top: 50%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 #rightC{
   right:10%;
   top: 50%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  
   display: inline-block;
   max-width: 10%;
   position: fixed;
