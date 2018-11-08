@@ -193,7 +193,7 @@ class Say extends Component{
       <div>
       <h3>HalcyonWeave</h3>
       <p>Landing page for freelancing work I plan to undertake</p>
-      <p>Done with react. Good amount of SVG, as well as react animations.</p>
+      <p>Done with react. Tried out some SVG creation and animation. </p>
       <a href='https://www.halcyonweave.com' target="_blank" rel="noopener noreferrer">Live page</a><br/>
       <a href='https://www.github.com/Lufii/halcyonWeave.git' target="_blank" rel="noopener noreferrer">HalcyonWeave on GitHub</a><br/>
       </div>
