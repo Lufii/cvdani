@@ -193,7 +193,7 @@ class Say extends Component{
       <div>
       <h3>HalcyonWeave</h3>
       <p>Landing page for freelancing work I plan to undertake</p>
-      <p>Done with react. Tried out some SVG creation and animation. </p>
+      <p>Done with react. Involved SVG creation and animation. </p>
       <a href='https://www.halcyonweave.com' target="_blank" rel="noopener noreferrer">Live page</a><br/>
       <a href='https://www.github.com/Lufii/halcyonWeave.git' target="_blank" rel="noopener noreferrer">HalcyonWeave on GitHub</a><br/>
       </div>
@@ -211,7 +211,7 @@ class Say extends Component{
       <p>Returned to my programming roots from highschool and realised I enjoy JavaScript very much. Studied HTML, CSS and JS for a few months before landing my first job in the sector</p>
       <h3>2017 - 2018</h3>
       <p>Junior Survey Programmer at Toluna(12 months) with HTML, CSS, JavaScript and jQuery. I occasionally took on project-specific requiremens like SQL and browser compatibility work on custom components.
-      Was SP lead for a multitude of quick-turnaround projects and a handful of long-term studies as well. I loved it, but aimed to expand my horizons beyond market research and the framework in use</p>
+      Was SP lead for a multitude of quick-turnaround projects and a handful of long-term studies as well. I loved it, but aimed to expand my horizons beyond the framework in use</p>
       <h3>2018</h3>
       <p>Administrative Assistant at Design Resource(2 months). Light schedule, fixed term contract that gave me time and resources to dive deeper into React, basic Node and basic MongoDB</p>
       </div>
