@@ -144,6 +144,7 @@ class Say extends Component{
     return(
       <div>
       <p>Generate positive change</p>
+      <p>Simple yet thorough</p>
       <p>Understand other perspectives</p>
       <p>Concise communication</p>
       <p>Be mindful of others</p>
