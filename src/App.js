@@ -215,6 +215,8 @@ class Say extends Component{
       Was SP lead for a multitude of quick-turnaround projects and a handful of long-term studies as well. I loved it, but aimed to transition to a modern javascript framework</p>
       <h3>2018</h3>
       <p>Administrative Assistant at Design Resource(2 months). Light schedule, fixed term contract that gave me time and resources to dive deeper into React, basic Node and basic MongoDB</p>
+      <h3>2019 onwards</h3>
+      <p>Junior Software Engineer at OPSWAT. Amazing place to work at - my focus is front-end web development on one of our products.</p>
       </div>
     );
     else
