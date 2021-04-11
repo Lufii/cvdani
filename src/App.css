@@ -37,18 +37,7 @@ fill:rgb(255,255,255)
 }
 
 .App, body, #root, html{
-height:100%;
-}
-
-#leftC{
-padding:10px;
-
-}
-
-#rightC{
-margin: 0 auto;
-max-width: 50%;
-border-top: 1px solid white;
+min-height: 100vh;
 }
 
 
@@ -58,13 +47,24 @@ border-top: 1px solid white;
   display: inline-block;
   max-width: 50%;
   position: relative;
-  top: 50%;
+}
 
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+#leftC a:link{
+  color: white;
+}
+
+#leftC a:hover, a:visited{
+  color: red;
+}
+
+#leftC{
+padding:10px;
+}
+
+#rightC{
+margin: 0 auto;
+max-width: 50%;
+border-top: 1px solid white;
 }
 
 #rightC{
@@ -86,6 +86,9 @@ border-top: 1px solid white;
 
 .App {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 }
@@ -99,14 +102,6 @@ border-top: 1px solid white;
     border: none;
     outline: none;
     transition: 0.4s;
-}
-
-#leftC a:link{
-  color: white;
-}
-
-#leftC a:hover, a:visited{
-  color: red;
 }
 
 .contact img {
